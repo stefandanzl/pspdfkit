@@ -40,7 +40,7 @@ const item = {
 
 PSPDFKit.load({
 	baseUrl,
-	container: "#pspdfkit",
+	container: "#pdfContainer",
 	document: "file4.pdf",
 	theme: PSPDFKit.Theme.DARK,
 	//annotationPresets,
