@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Open local file system PDF</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+	</head>
+	<body>
+        <!-- id="uploadButton1" class="uploadButtons" -->
+		<input id="uploadField"  style="display: none;"               
+			type="file"
+			accept="application/pdf,image/png,image/jpeg,image/tiff"
+		/>
+        <button id="uploadButton1" onclick="uploadF()">Upload</button>
+        <button id="unloadButton" onclick="unloaderF()" style="display: none;">Unload</button>
+		<div id="pdfContainer"></div>
+		<script
+			src="/node_modules/pspdfkit/dist/pspdfkit.js"
+			type="text/javascript"
+		></script>
+		<script type="text/javascript" src="upload.js">
+			
+		</script>
+
+
+
+
+
+
+
+	</body>
+</html>
