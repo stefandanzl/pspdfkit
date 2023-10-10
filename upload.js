@@ -35,10 +35,13 @@
        
 
         function openF(event) {
+            console.log("openF");
             if(event.target.files.length > 1){
                 unloaderF();
+                console.log(">1");
             }
             else if (event.target.files.length === 1) {
+                console.log("=1")
                 console.log(event.target.files)
                 const documentFileObjectUrl = URL.createObjectURL(event.target.files[0]);
                 document.getElementById("uploadButton1").style.display='none';  
@@ -80,5 +83,7 @@
         function uploadF(){
             document.getElementById("uploadField")
             uploadField.click();
-            document.getElementById("uploadField").addEventListener("change", (event) => {openF(event);});
+            
         }
+        
+        document.getElementById("uploadField").addEventListener("change", (event) => {openF(event);});
