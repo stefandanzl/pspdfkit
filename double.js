@@ -32,7 +32,7 @@ const item = {
 
 PSPDFKit.load({
 	baseUrl,
-	container: "#pdfContainer",
+	container: "#pdfContainer1",
 	document: "file4.pdf",
 	theme: PSPDFKit.Theme.DARK,
 	//annotationPresets,
@@ -59,7 +59,7 @@ PSPDFKit.defaultToolbarItems[13] = item;
 
 PSPDFKit.load({
 	baseUrl,
-	container: "#pdfContainer",
+	container: "#pdfContainer2",
 	document: "document.pdf",
 	theme: PSPDFKit.Theme.DARK,
 });
