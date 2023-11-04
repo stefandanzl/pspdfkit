@@ -1,3 +1,3 @@
 # pspdfkit
 
-No trial text!
+No trial watermark!
